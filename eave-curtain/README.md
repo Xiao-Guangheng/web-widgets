@@ -1,8 +1,6 @@
 # 屋檐挂件（eave-curtain）
 
-<video src="images/demo.mp4" controls loop autoplay muted playsinline style="max-width:100%;border-radius:8px"></video>
-
-*（若视频无法显示，可看 [GIF 版演示](images/demo.gif)）*
+![屋檐挂件交互演示](images/demo.gif)
 
 > 🖱️ **在线演示**：<https://xiao-guangheng.github.io/web-widgets/eave-curtain/demo.html>
 
