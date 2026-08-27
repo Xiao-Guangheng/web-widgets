@@ -12,6 +12,8 @@
 
 *（若视频无法显示，可看 [GIF 版演示](./eave-curtain/images/demo.gif)）*
 
+> 🖱️ **在线试玩**：<https://xiao-guangheng.github.io/web-widgets/eave-curtain/demo.html>
+
 > 更多挂件陆续添加中……
 
 ## 说明
