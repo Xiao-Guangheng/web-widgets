@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屋檐挂件 · 演示</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: #2e2b2a;
+            background: #f4efe6;
+            transition: background 0.4s, color 0.4s;
+        }
+        body.dark {
+            color: #d8d5d0;
+            background: #0b0b12;
+        }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 160px 24px 80px;
+        }
+        h1 { font-size: 2rem; margin-bottom: 1rem; }
+        p { line-height: 1.9; margin-bottom: 1.2rem; color: inherit; opacity: 0.85; }
+        .tip {
+            background: rgba(0,0,0,0.05);
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 0.95rem;
+            margin-top: 2rem;
+        }
+        body.dark .tip { background: rgba(255,255,255,0.06); }
+        .switch-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 200;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            background: #2e2b2a;
+            color: #f4efe6;
+        }
+        body.dark .switch-btn { background: #e3d3b6; color: #0b0b12; }
+    </style>
+</head>
+<body>
+    <button class="switch-btn" id="theme-toggle">切换 深色/浅色</button>
+    <main>
+        <h1>屋檐挂件演示</h1>
+        <p>页面顶部左右两侧是屋檐，屋檐下挂着随风摆动的文字链条。移动鼠标靠近文字，链条会被拨开。</p>
+        <p>挂件每 15 秒自动切换到下一个季节主题（春 → 夏 → 秋 → 冬），屋檐图案与文字都会一起变化。</p>
+        <p>点击右上角按钮可以切换本页的深色 / 浅色模式，观察文字颜色自适应。</p>
+        <div class="tip">
+            💡 提示：请通过本地服务器访问本页（如 <code>python3 -m http.server</code>），
+            这样浏览器才能读取图片像素，文字才会精确贴合屋檐边缘。
+            直接双击打开时挂件仍可运行，但会退化为“平底挂链”。
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+    <!-- ⬇️ 可选：在引入脚本前覆盖默认配置（这里关闭窄屏隐藏，让演示页任何窗口宽度都能看到挂件） -->
+    <script>
+        window.eaveCurtainConfig = {
+            hideOnMobile: false
+        };
+    </script>
+
+    <!-- ⬇️ 核心：一行引入挂件 -->
+    <script src="eave-curtain.js" defer></script>
+</body>
+</html>

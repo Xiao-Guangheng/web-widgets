@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eave-curtain</title>
+    <!-- 纯净演示页：无正文文字，仅挂件本身，用于截图 / 录制 GIF -->
+    <style>
+        html, body { margin: 0; padding: 0; height: 100%; }
+        body {
+            background: #f4efe6;
+            /* 让空页面可以滚动出高度，方便录到更长的链条 */
+            min-height: 120vh;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 录制专用配置：任何宽度都显示（Playwright 视口较窄）
+        window.eaveCurtainConfig = {
+            hideOnMobile: false
+        };
+    </script>
+    <script src="eave-curtain.js" defer></script>
+</body>
+</html>
