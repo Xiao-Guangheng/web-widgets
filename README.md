@@ -8,7 +8,9 @@
 |------|-----------|
 | [屋檐挂件](./eave-curtain/) | 古风屋檐下挂着随风摆动的文字链条，四季自动切换，鼠标能拨动 |
 
-![屋檐挂件预览](./eave-curtain/images/demo.gif)
+<video src="./eave-curtain/images/demo.mp4" controls loop autoplay muted playsinline style="max-width:100%;border-radius:8px"></video>
+
+*（若视频无法显示，可看 [GIF 版演示](./eave-curtain/images/demo.gif)）*
 
 > 更多挂件陆续添加中……
 

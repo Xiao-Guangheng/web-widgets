@@ -1,6 +1,8 @@
 # 屋檐挂件（eave-curtain）
 
-![屋檐挂件交互演示](images/demo.gif)
+<video src="images/demo.mp4" controls loop autoplay muted playsinline style="max-width:100%;border-radius:8px"></video>
+
+*（若视频无法显示，可看 [GIF 版演示](images/demo.gif)）*
 
 一个**零依赖、自包含**的网页装饰脚本：页面顶部左右两侧各有一片古风屋檐，屋檐下挂着随风摆动的文字链条。移动鼠标靠近，文字链条会像珠帘一样被拨开。
 
